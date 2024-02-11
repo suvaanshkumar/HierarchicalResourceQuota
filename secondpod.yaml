@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secondpod
+  namespace: teamb
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    resources:
+      requests:
+        memory: "1Gi"
+        cpu: "50m"
+      limits:
+        memory: "1Gi"
+        cpu: "50m"

@@ -1,0 +1,10 @@
+apiVersion: hnc.x-k8s.io/v1alpha2
+kind: HierarchicalResourceQuota
+metadata:
+  name: cpuquota
+  namespace: main-org
+spec:
+  hard:
+    cpu: "5"
+    memory: 1Gi
+    pods: "2"
